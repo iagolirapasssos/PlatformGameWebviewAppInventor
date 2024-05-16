@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #87ceeb;
+    position: relative;
+}
+
+#menu {
+    text-align: center;
+}
+
+#scoreBoard {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#gameOver {
+    font-size: 30px;
+    color: red;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+canvas {
+    border: 2px solid #000;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#mobileControls {
+    position: absolute;
+    bottom: 20px; /* Ajuste esta linha para alterar a distância do fundo */
+    right: 20px;  /* Ajuste esta linha para alterar a distância do lado direito */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;  /* Ajuste esta linha para alterar o espaço entre os botões */
+}
+
+#horizontalControls {
+    display: flex;
+    gap: 10px;  /* Ajuste esta linha para alterar o espaço entre os botões */
+}
+
+.controlButton {
+    width: 60px;   /* Ajuste esta linha para alterar a largura dos botões */
+    height: 60px;  /* Ajuste esta linha para alterar a altura dos botões */
+    background-color: white;
+    border: none; /* Remove a borda dos botões */
+    border-radius: 5px;
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir o botão */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    cursor: pointer;
+    user-select: none;
+}

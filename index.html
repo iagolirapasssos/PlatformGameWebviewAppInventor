@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="menu">
+        <h1>Plataforma Game</h1>
+        <button id="newGameButton">New Game</button>
+    </div>
+    <div id="scoreBoard" style="display:none;">Score: <span id="score">0</span></div>
+    <canvas id="gameCanvas" width="800" height="400" style="display:none;"></canvas>
+    <div id="gameOver" style="display:none;">Game Over! Reiniciando...</div>
+    
+    <!-- Controles para dispositivos móveis -->
+    <div id="mobileControls" style="display:none;">
+        <button id="jumpButton" class="controlButton" style="background-image: url('up.png');"></button>
+        <div id="horizontalControls">
+            <button id="leftButton" class="controlButton" style="background-image: url('left.png');"></button>
+            <button id="rightButton" class="controlButton" style="background-image: url('right.png');"></button>
+        </div>
+    </div>
+
+    <div id="scoreBoard" style="display:none;">Score: <span id="score">0</span></div>
+    <canvas id="gameCanvas" width="800" height="400" style="display:none;"></canvas>
+    <div id="gameOver" style="display:none;">Game Over! Reiniciando...</div>
+    <audio id="backgroundMusic" src="background.wav" loop></audio>
+    <audio id="menuMusic" src="background.wav" loop></audio>
+    <audio id="collectSound" src="collect.wav"></audio>
+    <audio id="gameOverSound" src="gameover.wav"></audio>
+    <audio id="nextLevelSound" src="nextlevel.mp3"></audio>
+    <script src="game.js"></script>
+</body>
+</html>
